@@ -1,12 +1,10 @@
-## 고양이 인스타 백엔드
+## SOCKET.IO를 이용한 랜덤채팅 백엔드
 
-- 고양이들이 회원가입하고 로그인해서 사진도 올릴수 있고, 조회할수 있는 고양이 인스타를 제작했습니다.
-- 프론트엔드 코드는 미완성입니다.
-- aws브랜치에 보시면 aws 버킷이랑 연동하는 코드도 있습니다.
+- 사이트를 들어가자마자 이름을 작성해서 들어갈수 있습니다.
+- 채팅을 하면 단톡방 처럼 여럿이서 익명으로 채팅할 수 있습니다.
 
-
-- 로그인은 JWT 토큰화를 이용해서 로그인하면 토큰을 발급해 bearer 헤더에 요청을 보내서 로그인 하도록 했습니다.
-- .env 파일을 숨겼으므로 clone만으로는 동작하지 않습니다.
+- 프론트엔드 코드는 미완성입니다. (디자이너 필요)
+- MONGODB로 이름 등록도 미완성입니다.
 
 
 
@@ -14,7 +12,7 @@
 
 ## 기술 Stack
 
-TypeScript , MongoDB , NestJS , AWS
+TypeScript , MongoDB , NestJS , Socket.IO
 
 
 
@@ -27,11 +25,6 @@ TypeScript , MongoDB , NestJS , AWS
 네스트JS는 nodejs 프레임워크로 npm을 이용해 설치할수 있습니다.
 주 언어는 TS이고, 구조가 java 스프링이랑 거의 동일합니다.
 
-
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
 
@@ -65,17 +58,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
